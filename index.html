@@ -8,7 +8,34 @@
 </head>
 <body>
 
-    <h1> Hello World, I'm Wesley!!!! </h1>
+    <div id="fullpage">
+        <div class="section">
+            <nav id="main-navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div> <!--End of Section 1-->
+        <div class="section">Two</div>
+        <div class="section">Three</div>
+        <div class="section">Four</div>
+        <div class="section">Five</div>
+    </div>
+
+
     
+    
+    <script src="scripts/fullpage.js"></script>
+    <script src="scripts/script.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#0d0d0d', '#e6e6e6', '#0d0d0d', '#e6e6e6', '#0d0d0d']
+        });
+    </script>
 </body>
 </html>
