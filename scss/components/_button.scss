@@ -1,3 +1,67 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+
+.social-media {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 28px;
+    z-index: 1000;
+    bottom: 0;
+  
+    .linkedin-icon-light {
+      content: url('/images/icons/linkedin-icon-light.png');
+      display: block;
+    }
+    
+    .github-icon-light {
+      content: url('/images/icons/github-icon-light.png');
+      display: block;
+    }
+    
+    .codepen-icon-light {
+      content: url('/images/icons/codepen-icon-light.png');
+      display: block;
+    }
+    
+    .stackoverflow-icon-light {
+      content: url('/images/icons/stackoverflow-icon-light.png');
+      display: block;
+    }
+
+    .linkedin-icon {
+      content: url('/images/icons/linkedin-icon.png');
+      display: block;
+    }
+    
+    .github-icon {
+      content: url('/images/icons/github-icon.png');
+      display: block;
+    }
+    
+    .codepen-icon {
+      content: url('/images/icons/codepen-icon.png');
+      display: block;
+    }
+    
+    .stackoverflow-icon {
+      content: url('/images/icons/stackoverflow-icon.png');
+      display: block;
+    }
+    
+  }
+  
+  .linkedin-icon-light,
+  .github-icon-light,
+  .codepen-icon-light,
+  .stackoverflow-icon-light,
+  .linkedin-icon,
+  .github-icon,
+  .codepen-icon,
+  .stackoverflow-icon {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+  }
