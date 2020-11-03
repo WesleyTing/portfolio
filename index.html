@@ -12,18 +12,40 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
-<body>
+<body>           
 
-    <div class="sidebar">
-        <button class="sidebar-toggle"><i class="fa fa-plus icon"></i></button>
+    
+    <div class="site-logo" id="moveToHome">
+        <img src="images/favicon.png" alt="logo">
+        </a>
       </div>
-    <div id="fullpage">
-        <div class="section">
 
+
+    <nav class="main-nav">
+
+        <div class="sidebar is-closed">
+            <button class="sidebar-toggle"><i class="fas fa-arrow-left"></i></button>
+        </div>
+    </nav>
+
+
+
+
+
+      
+    <div id="fullpage">
+        <div class="section" id="home">
+            <nav>
+                <h1>hello</h1>
+            </nav>
+
+            <article>one</article>
         </div> <!--End of Section 1-->
-        <div class="section">Two</div>
-        
+        <div class="section">Two
+
+        </div>
         <div class="section">Three</div>
         <div class="section">Four</div>
         <div class="section">Five</div>
@@ -35,7 +57,11 @@
     <script src="scripts/script.js"></script>
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#0d0d0d', '#e6e6e6', '#0d0d0d', '#e6e6e6', '#0d0d0d']
+            anchors: ['Home', 'About', 'Work', 'Work-2', 'Contact'],
+            sectionsColor: ['#0d0d0d', '#e6e6e6', '#0d0d0d', '#e6e6e6', '#0d0d0d'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Home', 'About', 'Work', 'Work 2', 'Contact']
         });
     </script>
 </body>
