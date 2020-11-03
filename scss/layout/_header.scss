@@ -4,8 +4,10 @@
 
 
 .site-logo{
-    position: fixed;
+    position: absolute;
     z-index: 100;
+    top: 0;
+    cursor: pointer;
 
     img{
         width: 80px;
