@@ -14,8 +14,14 @@ $width__sidebar: 15em;
   box-sizing: border-box;
 }
 
-body {
-  background-color: $color__bg;
+// body {
+//   background-color: $color__bg;
+// }
+
+.main-nav {
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
 }
 
 .sidebar-toggle {
@@ -28,10 +34,11 @@ body {
   border-radius: 50%;
   margin-left: $width__sidebar + 3.8em;
   margin-top: 1em;
-  background-color: $color__toggle;
-  transform: rotate(45deg);
+  background-color:blue;
+  transform: rotate(180deg);
   cursor: pointer;
   transition: .5s;
+  color: white;
   
   &.is-closed {
     transform: translateX(.3em) rotate(0deg);  
@@ -46,8 +53,10 @@ body {
 .sidebar {
   width: $width__sidebar;
   height: 100vh;
-  background-color: $color__sidebar;
+  background-color: red;
   transition: .7s;
+  z-index: 1;
+  position: absolute;
   
   &.is-closed {
     transform: translateX(-16em);
