@@ -18,7 +18,7 @@ $width__sidebar: 15em;
 //   background-color: $color__bg;
 // }
 
-.main-nav {
+.mobile-nav {
 
   position: absolute;
   top: 0;
@@ -60,6 +60,7 @@ $width__sidebar: 15em;
 }
 
 .sidebar {
+  display: none;
   width: $width__sidebar;
   height: 100vh;
   background-color: $light-grey;
