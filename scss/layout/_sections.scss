@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the sections of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.section-left {
+    display: none;
+
+    @media (min-width: 800px) {
+        display: block;
+    }
+
+    &.dark {
+        background-color: black;
+    }
+}
+
+
+.section-right {
+
+
+    @media (min-width: 800px) {
+        width: 60%;
+
+   
+    }
+
+}
+
+.section-left {
+    @media (min-width: 800px) {
+        width: 40%;
+    }
+}
