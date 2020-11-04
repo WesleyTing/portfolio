@@ -9,3 +9,9 @@ body {
 h1, h2 {
   text-transform: uppercase;
 }
+
+.section {
+  &.dark {
+    color: white;
+  }
+}
