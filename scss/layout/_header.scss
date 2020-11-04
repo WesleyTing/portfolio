@@ -5,12 +5,17 @@
 
 .site-logo{
     position: absolute;
-    z-index: 100;
-    top: 0;
+    z-index: 1;
+    top: 10px;
+    left: 12px;
     cursor: pointer;
 
     img{
         width: 80px;
         height: 80px;
+    }
+
+    &.top {
+        z-index: 1;
     }
 }
