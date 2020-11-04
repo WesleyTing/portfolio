@@ -1,0 +1,44 @@
+
+  
+.about-icons, .skills-icons, .languages-icon {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 28px;
+    text-align: center;
+    font-size: 14px;
+
+
+    p {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .icon {
+        display: block;
+        height: 32px;
+        width: 32px;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    .temp-icon {
+        content: url('/images/icons/temp-icon.png');
+    }
+
+    .web-development-icon {
+        content: url('/images/icons/web-development-icon.png');
+    }
+    .prototyping-icon {
+        content: url('/images/icons/prototyping-icon.png');
+    }
+    .responsive-design-icon {
+        content: url('/images/icons/responsive-design-icon.png');
+    }
+    .ux-research-icon {
+        content: url('/images/icons/ux-research-icon.png');
+    }
+
+
+    
+
+}
