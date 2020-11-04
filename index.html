@@ -16,69 +16,79 @@
 </head>
 <body>           
 
-    
 
 
-
-    <nav class="main-nav">
-
-        <div class="sidebar is-closed">
-            <button class="sidebar-toggle"><i class="fas fa-arrow-left"></i></button>
-        </div>
-    </nav>
-
-
-
-
-
-
-
-      
     <div id="fullpage">
-        <div class="section">
+        <div class="section"><!-- Start Home Page -->
+
             <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
             <div id='title'>
-              <span>
-                WESLEY TING
-              </span>
-              <br>
-              <span>
-                WEB DEVELOPER
-              </span>
+              <h1>Wesley 
+                  <br>
+                Ting</h1>
+              <h2>Web<br>Developer</h2>
             </div>
             
-            <!-- <h1>Wesley Ting</h1>
-            <h2>Web Developer</h2> -->
+    <nav class="main-nav">
+        <div class="sidebar s1">
+            <button class="sidebar-toggle t1"><i class="fas fa-angle-double-left fa-lg"></i></button>
+            <div class="site-logo top" id="moveToHome"><img src="images/logo/logo-temp.png" alt="logo"></div>
+            <h3 class="upright-title">Home</h3>
+            <h4 id="moveToAbout" class="title-links">About</h4>
+            <h4 id="moveToWorks" class="title-links">Works</h4>
+            <h4 id="moveToContact" class="title-links">Contact</h4>
+
+            <section class="social-media dark">
+                <a href="https://www.linkedin.com/in/wesleytingdev/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/WesleyTing"><i class="fab fa-github-alt"></i></a>
+                <a href="https://codepen.io/wesleyting"><i class="fab fa-codepen"></i></a>
+                <a href="https://stackoverflow.com/story/wesleyting"><i class="fab fa-stack-overflow"></i></a>
+            </section>
+        </div>
+    </nav>
+
             <div class="site-logo" id="moveToHome">
                 <img src="images/logo/logo-light.png" alt="logo">
                 </a>
               </div>
 
 
-            <section class="social-media">
-                <a href="https://www.linkedin.com/in/wesleytingdev/"><i class='linkedin-icon-light'></i></a>
-                <a href="https://github.com/WesleyTing"><i class='github-icon-light'></i></a>
-                <a href="https://codepen.io/wesleyting"><i class='codepen-icon-light'></i></a>
-                <a href="https://stackoverflow.com/story/wesleyting"><i class='stackoverflow-icon-light'></i></a>
-            </section>
+        </div><!-- End Home Page -->
 
-        </div> <!--End of Section 1-->
-        <div class="section">Two
+        <div class="section"><!-- Start About Page -->
 
-            <div class="site-logo" id="moveToHome">
-                <img src="images/logo/logo-dark.png" alt="logo">
-                </a>
-              </div>
+            <nav class="main-nav">
+                <div class="sidebar dark s2">
+                    <button class="sidebar-toggle t2"><i class="fas fa-angle-double-left fa-lg"></i></button>
+                    <div class="site-logo top" id="moveToHome"><img src="images/logo/logo-temp.png" alt="logo"></div>
+                    <h3 class="upright-title">About</h3>
+                    <h4 id="moveToWorks" class="title-links">Works</h4>
+                    <h4 id="moveToContact" class="title-links">Contact</h4>
 
-              <section class="social-media">
-                <a href="https://www.linkedin.com/in/wesleytingdev/"><i class='linkedin-icon'></i></a>
-                <a href="https://github.com/WesleyTing"><i class='github-icon'></i></a>
-                <a href="https://codepen.io/wesleyting"><i class='codepen-icon'></i></a>
-                <a href="https://stackoverflow.com/story/wesleyting"><i class='stackoverflow-icon'></i></a>
-            </section>
+                    <section class="social-media">
+                        <a href="https://www.linkedin.com/in/wesleytingdev/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/WesleyTing"><i class="fab fa-github-alt"></i></a>
+                        <a href="https://codepen.io/wesleyting"><i class="fab fa-codepen"></i></a>
+                        <a href="https://stackoverflow.com/story/wesleyting"><i class="fab fa-stack-overflow"></i></a>
+                    </section>
+
+                </div>
+            </nav>
+
+            <div class="section-left">
+                <div class="site-logo" id="moveToHome">
+                    <img src="images/logo/logo-dark.png" alt="logo">
+                    </a>
+                  </div>
+            </div>
+
+            <div class="section-right">
+                <H2>content</H2>
+            </div>
+
         </div>
         <div class="section">Three</div>
         <div class="section">Four</div>
@@ -92,7 +102,7 @@
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
             anchors: ['Home', 'About', 'Work', 'Work-2', 'Contact'],
-            sectionsColor: ['#0d0d0d', '#e6e6e6', '#0d0d0d', '#e6e6e6', '#0d0d0d'],
+            sectionsColor: ['#0d0d0d', '#ececec', '#0d0d0d', '#ececec', '#0d0d0d'],
             navigation: true,
             navigationPosition: 'right',
             navigationTooltips: ['Home', 'About', 'Work', 'Work 2', 'Contact']
