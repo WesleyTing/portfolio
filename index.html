@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front-end Developer | Wesley Ting</title>
+    <meta name="description" content="Portfolio for Wesley Ting, Vancouver-based Front-end Web Developer and Web Designer. This website showcases the technical skills and programming languages I have used, along with my personal style and taste in design.">
+    <title>Wesley Ting | Web Developer/Designer</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -19,25 +20,31 @@
 
     <div id="fullpage">
 
-        <div class="section stars-background dark "><!-- Start Home Page -->
+        <div class="section stars-background dark" id="home-page"><!-- Start Home Page -->
 
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
-            <div id='title'>
-              <h1>Wesley 
-                  <br>
-                Ting</h1>
-              <h2>Web<br>Developer</h2>
+            <div class="title-container">
+                <h1 class="title-name">Wesley<br>Ting</h1>
+                <h2 class="title-job">Web<br>Developer</h2>
             </div>
+
+    <nav class="desktop-nav">
+        <ul>
+            <li id="moveToAbout">About</li>
+            <li id="moveToWorks">Works</li>
+            <li id="moveToContact">Contact</li>
+        </ul>
+    </nav>
         
             
     <nav class="mobile-nav">
-        <div class="sidebar s1">
+        <div class="sidebar s1 is-closed">
             <button class="sidebar-toggle t1"><i class="fas fa-angle-double-left fa-lg"></i></button>
             <div class="site-logo top" id="moveToHome"><img src="images/logo/logo.png" alt="logo"></div>
             <section class="sidebar-links">
-                <h3 class="upright-title">Home </h3>
+                <h3 class="upright-title top">Home </h3>
                 <h4 id="moveToAbout" class="title-links">About</h4>
                 <h4 id="moveToWorks" class="title-links">Works</h4>
                 <h4 id="moveToContact" class="title-links">Contact</h4>
@@ -61,14 +68,14 @@
 
         </div><!-- End Home Page -->
 
-        <div class="section"><!-- Start About Page -->
+        <div class="section" id="about-page"><!-- Start About Page -->
 
             <nav class="mobile-nav">
-                <div class="sidebar dark s2">
+                <div class="sidebar dark s2 is-closed">
                     <button class="sidebar-toggle t2"><i class="fas fa-angle-double-left fa-lg"></i></button>
                     <div class="site-logo top" id="moveToHome"><img src="images/logo/logo.png" alt="logo"></div>
                     <section class="sidebar-links">
-                        <h4 id="moveToHome" class="title-links">Home</h4>
+                        <h4 id="moveToHome" class="title-links top">Home</h4>
                         <h3 class="upright-title">About</h3>
                         <h4 id="moveToWorks" class="title-links">Works</h4>
                         <h4 id="moveToContact" class="title-links">Contact</h4>
@@ -104,7 +111,7 @@
             <div class="section-right">
                 <section class="about container">
                 <h2>About</h2>
-                <p>Front-end web developer dedicated to learning the ins and outs of coding. A strong work ethic coupled with a fine attention to detail ensures satisfaction in all aspects of development. </p>
+                <p>I am a Front-End Web Develeper with experience in building fully-fledged, responsive websites. My passion lies in making creative and functional websites, all with my own style and taste in the mix.  </p>
                 <h2>What I do</h2>
                 <div class="about-icons">
                     <div class="icon-text">
@@ -127,22 +134,21 @@
 
                 <h2>Languages</h2>
                 <section class="languages-icon">
-                    <i class='icon temp-icon'></i>
-                    <i class='icon temp-icon'></i>
-                    <i class='icon temp-icon'></i>
-                    <i class='icon temp-icon'></i>
-                    <i class='icon temp-icon'></i>
-                    <i class='icon temp-icon'></i>
+                    <i class='icon html-icon'></i>
+                    <i class='icon css-icon'></i>
+                    <i class='icon javascript-icon'></i>
+                    <i class='icon php-icon'></i>
+                    <i class='icon sass-icon'></i>
                 </section>
                 
                 <h2>Skills</h2>
                 <div class="skills-icons">
-                    <i class='icon temp-icon'></i>
-                    <i class='icon temp-icon'></i>
-                    <i class='icon temp-icon'></i>
-                    <i class='icon temp-icon'></i>
-                    <i class='icon temp-icon'></i>
-                    <i class='icon temp-icon'></i>
+                    <i class='icon react-icon'></i>
+                    <i class='icon seo-icon'></i>
+                    <i class='icon wordpress-icon'></i>
+                    <i class='icon figma-icon'></i>
+                    <i class='icon photoshop-icon'></i>
+                    <i class='icon illustrator-icon'></i>
                 </div>
             </section>
             </div>
@@ -150,14 +156,14 @@
 
         </div><!-- End About Page -->
 
-        <div class="section dark"><!-- Start Works Page -->
+        <div class="section dark" id="works-page"><!-- Start Works Page -->
 
             <nav class="mobile-nav">
-                <div class="sidebar s3">
+                <div class="sidebar s3 is-closed">
                     <button class="sidebar-toggle t3"><i class="fas fa-angle-double-left fa-lg"></i></button>
                     <div class="site-logo top" id="moveToHome"><img src="images/logo/logo.png" alt="logo"></div>
                     <section class="sidebar-links">
-                        <h4 id="moveToHome" class="title-links">Home</h4>
+                        <h4 id="moveToHome" class="title-links top">Home</h4>
                         <h4 id="moveToAbout" class="title-links">About</h4>
                         <h3 class="upright-title">Works</h3>
                         <h4 id="moveToContact" class="title-links">Contact</h4>
@@ -193,23 +199,29 @@
             <div class="section-right">
                 <section class="works container">
                     <span class="project-images">
-                        <img src="images/projects/coming-soon.jpg" alt="temporary">
+                    <div class="project">
+                        <div class="overlay"> </div>
+                        <a href="http://wting.bcitwebdeveloper.ca/html-css/hive/"><img src="images/projects/hive.png" alt="Hive project preview"></a>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, exercitationem!</p>
-                        <img src="images/projects/coming-soon.jpg" alt="temporary">
+                    </div>
+                    <div class="project">
+                        
+                        <a href="http://wting.bcitwebdeveloper.ca/reeltalk/"><img src="images/projects/reeltalk.png" alt="Reeltalk project preview"></a>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, exercitationem!</p>
+                    </div>
                     </span>
                 </section>
             </div>
 
         </div><!-- End Works Page -->
 
-        <div class="section"><!-- Start Works 2 Page -->
+        <div class="section" id="works-2-page"><!-- Start Works 2 Page -->
             <nav class="mobile-nav">
-                <div class="sidebar dark s4">
+                <div class="sidebar dark s4 is-closed">
                     <button class="sidebar-toggle t4"><i class="fas fa-angle-double-left fa-lg"></i></button>
-                    <div class="site-logo top" id="moveToHome"><img src="images/logo/logo.png" alt="logo"></div>
+                    <div class="site-logo" id="moveToHome"><img src="images/logo/logo.png" alt="logo"></div>
                     <section class="sidebar-links">
-                        <h4 id="moveToHome" class="title-links">Home</h4>
+                        <h4 id="moveToHome" class="title-links top">Home</h4>
                         <h4 id="moveToAbout" class="title-links">About</h4>
                         <h3 class="upright-title">Works</h3>
                         <h4 id="moveToContact" class="title-links">Contact</h4>
@@ -221,14 +233,13 @@
                         <a href="https://codepen.io/wesleyting"><i class="fab fa-codepen"></i></a>
                         <a href="https://stackoverflow.com/story/wesleyting"><i class="fab fa-stack-overflow"></i></a>
                     </section>
-
                 </div>
             </nav>
 
             <div class="section-left sidebar dark">
                 <div class="site-logo top" id="moveToHome"><img src="images/logo/logo.png" alt="logo"></div>
                 <section class="sidebar-links">
-                    <h4 id="moveToHome" class="title-links">Home</h4>
+                    <h4 id="moveToHome" class="title-links top">Home</h4>
                     <h4 id="moveToAbout" class="title-links">About</h4>
                     <h3 class="upright-title">Works</h3>
                     <h4 id="moveToContact" class="title-links">Contact</h4>
@@ -245,9 +256,9 @@
             <div class="section-right">
                 <section class="works container">
                     <span class="project-images">
-                        <img src="images/projects/coming-soon.jpg" alt="temporary">
+                        <a href="https://henribowen.bcitwebdeveloper.ca/"><img src="images/projects/capstone.jpg" alt="Capstone project preview"></a>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, exercitationem!</p>
-                        <img src="images/projects/coming-soon.jpg" alt="temporary">
+                        <a href="https://wesleyting.com/"></a><img src="images/projects/portfolio.jpg" alt="Portfolio project preview">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, exercitationem!</p>
                     </span>
                 </section>
@@ -255,18 +266,18 @@
 
         </div><!-- End Works 2 Page -->
 
-        <div class="section stars-background dark"><!-- Start Contact Page -->
+        <div class="section stars-background dark" id="contact-page"><!-- Start Contact Page -->
 
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
 
             <nav class="mobile-nav">
-                <div class="sidebar s5">
+                <div class="sidebar s5 is-closed">
                     <button class="sidebar-toggle t5"><i class="fas fa-angle-double-left fa-lg"></i></button>
                     <div class="site-logo top" id="moveToHome"><img src="images/logo/logo.png" alt="logo"></div>
                     <section class="sidebar-links">
-                        <h4 id="moveToHome" class="title-links">Home</h4>
+                        <h4 id="moveToHome" class="title-links top">Home</h4>
                         <h4 id="moveToAbout" class="title-links">About</h4>
                         <h4 id="moveToWorks" class="title-links">Works</h4>
                         <h3 class="upright-title long">Contact</h3>
@@ -329,14 +340,5 @@
     <script src="scripts/fullpage.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
-    <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-            anchors: ['Home', 'About', 'Works', 'Works-2', 'Contact'],
-            sectionsColor: ['#0d0d0d', '#ececec', '#0d0d0d', '#ececec', '#0d0d0d'],
-            navigation: true,
-            navigationPosition: 'right',
-            navigationTooltips: ['Home', 'About', 'Works', 'Works 2', 'Contact']
-        });
-    </script>
 </body>
 </html>

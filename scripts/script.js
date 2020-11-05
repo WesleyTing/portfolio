@@ -1,3 +1,25 @@
+var myFullpage = new fullpage('#fullpage', {
+  anchors: ['Home', 'About', 'Works', 'Works-2', 'Contact'],
+  sectionsColor: ['#121923', '#ececec', '#121923', '#ececec', '#121923'],
+  navigation: true,
+  navigationPosition: 'right',
+  navigationTooltips: ['Home', 'About', 'Works', 'Works 2', 'Contact'],
+  afterLoad: function(origin, destination, direction){
+  //about
+  if(destination.index == 1){
+      document.querySelector('#about-page').querySelector('.container').style.left = 0 + 'px';
+  }
+
+  //back to original state
+  // else if(origin && origin.index == 1){
+  //     document.querySelector('#about-page').querySelector('.container').style.left = 130 + '%';
+  // }
+
+  //section 3 is using the state classes to fire the animation
+  //see the CSS code above!
+}
+});
+
 // Home Page Sidebar
 var toggleBtn = document.querySelector('.s1');
 var sidebar = document.querySelector('.t1');
@@ -62,4 +84,7 @@ $(document).on('click', '#moveToWorks', function(){
 $(document).on('click', '#moveToContact', function(){
   fullpage_api.moveTo('Contact');
 });
+
+
+
 

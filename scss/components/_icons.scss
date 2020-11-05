@@ -7,11 +7,22 @@
     text-align: center;
     font-size: 14px;
 
+        @media (min-width:600px) {
+            font-size:16px;
+        }
+
+
+    .icon-text {
+        p {
+        padding-top: 5px;
+    }
+}
 
     p {
         margin: 0 auto;
         text-align: center;
     }
+
 
     .icon {
         display: block;
@@ -19,8 +30,14 @@
         width: 32px;
         cursor: pointer;
         margin: 0 auto;
-    }
 
+        @media (min-width:600px) {
+            height: 48px;
+            width: 48px;
+        }
+    
+
+    }
     .temp-icon {
         content: url('/images/icons/temp-icon.png');
     }
@@ -38,7 +55,42 @@
         content: url('/images/icons/ux-research-icon.png');
     }
 
+    .html-icon {
+        content: url('/images/icons/html-icon.png');
+    }
+    .css-icon {
+        content: url('/images/icons/css-icon.png');
+    }
+    .javascript-icon {
+        content: url('/images/icons/javascript-icon.png');
+    }
+    .php-icon {
+        content: url('/images/icons/php-icon.png');
+    }
+    .sass-icon {
+        content: url('/images/icons/sass-icon.png');
+    }
 
-    
+
+    .react-icon {
+        content: url('/images/icons/react-icon.png');
+    }
+    .seo-icon {
+        content: url('/images/icons/seo-icon.png');
+    }
+    .wordpress-icon {
+        content: url('/images/icons/wordpress-icon.png');
+    }
+    .figma-icon {
+        content: url('/images/icons/figma-icon.png');
+    }
+    .photoshop-icon {
+        content: url('/images/icons/photoshop-icon.png');
+    }
+    .illustrator-icon {
+        content: url('/images/icons/illustrator-icon.png');
+    }
+
+
 
 }

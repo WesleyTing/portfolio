@@ -5,20 +5,53 @@
 
 .works {
     text-align: center;
+    padding: 18px;
 
-}
 
-.project-images {
-    
-    img{
-        width: 20vw;
-        max-width:300px;
-        height: auto;
-        cursor: pointer;
+    .project-images {
 
-        @media (min-width: 1000px) {
-            width: 100px;
+        position: relative;
+
+        .project {
+
+            .overlay {
+                position: fixed; /* Sit on top of the page content */
+                display: block; /* Hidden by default */
+                width: 100%; /* Full width (cover the whole page) */
+                height: 100%; /* Full height (cover the whole page) */
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+                z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+                cursor: pointer; /* Add a pointer on hover */
+            }
+
         }
-    }
 
+
+    
+        img{
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            transition: all 0.6s ease-in-out;
+            filter: grayscale(50%);
+
+            &:hover {
+                transform: scale(1.1);
+                filter: none;
+
+            }
+    
+            @media (min-width: 1000px) {
+                width: 400px;
+            }
+        }
+    
+    }
 }
+
+
+

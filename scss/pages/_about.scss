@@ -4,6 +4,18 @@
 
 
 .about {
+  padding-left: 20px; 
+  padding-right: 52px; 
+
+  @media (min-width:650px){
+    max-width: 750px;
+  }
+
+  @media (min-width: 900px){
+    display: block;
+    margin: 0 auto;
+    padding: 48px;
+  }
 
 
 

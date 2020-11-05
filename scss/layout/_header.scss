@@ -6,8 +6,8 @@
 .site-logo{
     position: absolute;
     z-index: 1;
-    top: 10px;
-    left: 12px;
+    top: 18px;
+    left: 18px;
     cursor: pointer;
 
     img{
@@ -17,5 +17,38 @@
 
     &.top {
         z-index: 1;
+    }
+}
+
+.desktop-nav {
+    width: 100%;
+    text-transform: uppercase;
+    display: none;
+    
+    @media (min-width: 900px){
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        right: 0;
+        top: 32px;
+        font-size: 28px;
+        letter-spacing: 8px;
+    }
+
+    li{
+        padding-right: 48px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+
+            color: grey;
+        }
     }
 }

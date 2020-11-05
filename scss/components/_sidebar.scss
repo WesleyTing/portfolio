@@ -14,7 +14,7 @@ $width__sidebar: 14em;
   position: absolute;
   top: 0;
 
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     display: none;
   }
 }
@@ -26,8 +26,8 @@ $width__sidebar: 14em;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  margin-left: $width__sidebar + 1.5;
-  margin-top: 15em;
+  margin-left: $width__sidebar + 2;
+  margin-top: 14em;
   background-color: transparent;
   transform: rotate(180deg);
   cursor: pointer;
@@ -41,7 +41,7 @@ $width__sidebar: 14em;
   }
   
   &.is-closed {
-    transform: translateX(.3em) rotate(0deg);  
+    transform: translateX(0.3em) rotate(0deg);  
   }
   
   .icon {
@@ -59,7 +59,7 @@ $width__sidebar: 14em;
   z-index: 100;
   position: absolute;
   
-    @media (min-width:800px) {
+    @media (min-width:900px) {
       position: relative;
     }
   
@@ -74,6 +74,10 @@ $width__sidebar: 14em;
       padding-left: 32px;
       text-transform: uppercase;
       color: $dark-grey;
+      
+      &.top {
+        margin-top: 0;
+      }
 
 
       &:hover {
@@ -85,6 +89,7 @@ $width__sidebar: 14em;
 
   .upright-title {
     // padding-top: 4em;
+    display: inline-block;
     writing-mode: vertical-rl;
     text-orientation: upright;
     text-transform: uppercase;
@@ -102,7 +107,8 @@ $width__sidebar: 14em;
 
 
   &.dark {
-    background-color: black;
+
+    background-color: #121923;
 
     .upright-title {
       color: white;
