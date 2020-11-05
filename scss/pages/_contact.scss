@@ -3,10 +3,13 @@
 // -----------------------------------------------------------------------------
 
 
-.contact-cta {
-    position: absolute;
-    padding-top: 50px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+
+.contact {
+    text-align: center;
+    padding-bottom: 180px;
+    
+    .contact-message {
+        font-size: 28px;
+        padding-bottom: 50px;
+    }
 }

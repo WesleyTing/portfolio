@@ -9,14 +9,6 @@ var myFullpage = new fullpage('#fullpage', {
   if(destination.index == 1){
       document.querySelector('#about-page').querySelector('.container').style.left = 0 + 'px';
   }
-
-  //back to original state
-  // else if(origin && origin.index == 1){
-  //     document.querySelector('#about-page').querySelector('.container').style.left = 130 + '%';
-  // }
-
-  //section 3 is using the state classes to fire the animation
-  //see the CSS code above!
 }
 });
 

@@ -11,4 +11,51 @@ footer {
     color: black;
     text-align: center;
     font-size: 12px;
+    font-weight: bold;
+    padding: 12px;
+    left: 0;
+
+    .copyright-desktop {
+        display: none;
+    }
+
+    .social-media-footer {
+        display: none;
+    }
+
+    @media (min-width: 900px) {
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        
+        .copyright-mobile {
+            display: none;
+        }
+
+        .copyright-desktop {
+            display: block;
+            width: 33.3%;
+            margin-top: 18px;
+        }
+
+        .social-media-footer {
+            display: block;
+            width: 33.3%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 10;
+            margin-top: 18px;
+
+
+        }
+
+        .contact-info {
+            width: 33.3%;
+            text-align: right;
+            line-height: 6px;
+            margin-bottom: 8px;
+        }
+
+
+    }
 }
